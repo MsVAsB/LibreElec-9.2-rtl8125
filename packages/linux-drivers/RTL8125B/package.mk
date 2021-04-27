@@ -18,7 +18,9 @@ pre_make_target() {
 }
 
 make_target() {
-  kernel_make KDIR=$(kernel_path)
+#  kernel_make KDIR=$(kernel_path)
+ cd $PKG_BUILD
+   bash autorun.sh
 }
 
 makeinstall_target() {
